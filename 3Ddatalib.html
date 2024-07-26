@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Model Gallery</title>
+    <style>
+        body { margin: 0; display: flex; }
+        #sidebar {
+            width: 20%;
+            background: #f0f0f0;
+            padding: 10px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        #gallery {
+            width: 80%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .model-thumbnail {
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <h2>3D Models</h2>
+        <div id="modelList">
+            <img class="model-thumbnail" src="cube.png" alt="Cube" data-model="cube">
+            <img class="model-thumbnail" src="sphere.png" alt="Sphere" data-model="sphere">
+            <!-- Add more thumbnails here -->
+        </div>
+    </div>
+    <div id="gallery"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/controls/OrbitControls.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
