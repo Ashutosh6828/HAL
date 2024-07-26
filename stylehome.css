@@ -6,14 +6,21 @@ background-image:url("hbg.jpg");
 
 
 ;
-font-size;50px
+/* font-size:50px */
 }
 
 header {
-    background-color: #388;
-    color: white;
-    padding: 15px;
-    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 90px;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 10px lightslategray;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 nav {
@@ -42,7 +49,6 @@ nav a {
 }
 
 main {
-    padding: 20px;
 font-size:15px;
 
 
@@ -53,10 +59,9 @@ section {
 }
 
 footer {
-    background-color: #388;
+    background-color: #5c5c5c;
     color: white;
-    text-align: center;
-    padding: 10px;
+    text-align: center;  
     position: fixed;
     bottom: 0;
     width: 100%;
